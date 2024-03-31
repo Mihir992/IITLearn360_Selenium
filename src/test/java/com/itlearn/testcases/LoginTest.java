@@ -29,13 +29,13 @@ public class LoginTest extends BaseTest {
 		if(userEmail.equals("Demo12") && userPwd.equals("Test123456$"))
 		{
 			System.out.println("Test Passed");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			lp.logout(); //there is no login button to do login again
 		}
 		else
 		{
 			captureScreenShot(driver,"VerifyLogin");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 	
