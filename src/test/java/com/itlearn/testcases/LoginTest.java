@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
 		//String password = "Test123456$";
 		lp.loginPortal(userEmail, userPwd);
 		
-		if(userEmail.equals(userEmail) && userPwd.equals(userPwd))
+		if(userEmail.equals("Demo12") && userPwd.equals("Test123456$"))
 		{
 			System.out.println("Test Passed");
 			AssertJUnit.assertTrue(true);
