@@ -13,11 +13,12 @@ import com.itlearn.utility.ReadExcelFile;
 public class LoginTestDriverData extends BaseTest {
 	
 	String fileName=System.getProperty("user.dir")+"\\TestData\\TestInfo.xlsx";
-
+        public LoginPage lp
+	
 	@Test(priority =1,dataProvider="LoginDataProvider")
 	public void VerifyLogin(String userEmail,String userPwd) throws IOException
 	{
-		LoginPage lp=new LoginPage(driver);
+		lp=new LoginPage(driver);
 //		String username ="Demo12";
 //		String password ="Test123456$";
 		lp.loginPortal(userEmail, userPwd);
