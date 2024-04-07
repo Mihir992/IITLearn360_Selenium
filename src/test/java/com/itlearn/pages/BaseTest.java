@@ -20,14 +20,14 @@ public class BaseTest {
 	public WebDriver driver;
 	public ConfigDataProvider config = new ConfigDataProvider();
 	
-	@BeforeMethod
+	
 	@BeforeClass
 	public void setUp()
 	{
 		driver=BrowserFactory.startApplication(driver,config.getStagingUrl());
 	}
 	
-	@AfterMethod
+	
 	@AfterClass
 	public void tearDown()
 	{
